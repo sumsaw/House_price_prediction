@@ -3,7 +3,7 @@ from xgboost import XGBClassifier
 data_file_path=r"input\train.csv"
 save_model=r"output\housing_xgboost_model.json"
 
-
+n_fold=5
 one_hot_columns=['homeType','school_district_level']
 
 normalize_columns=['latitude','longitude','garageSpaces','numOfPatioAndPorchFeatures',\

@@ -88,7 +88,7 @@ def train_n_fold(file_path):
     """
     Function which takes preprocessed data and does n-fold validation on it 
     """
-
+    df=pd.read_csv('input\data_preprocessd.csv')
 
     df['kfold']=-1
     df=df.sample(frac=1).reset_index(drop=True)
